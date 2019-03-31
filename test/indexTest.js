@@ -12,7 +12,7 @@ describe('index.js', function () {
 
     after(function () {
       spy.restore();
-    });
+    })
 
     it('invokes console.log() with the string "this code was called"', function () {
       expect(spy.calledWithExactly('this code was called')).to.be.true;
